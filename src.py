@@ -68,16 +68,6 @@ for content_text in content:
         if nearest_subhead:
             result_dict[nearest_subhead].append(content_text)
 
-# key1 = "Thyroid and"
-# key2 = "Parathyroid"
-# new_key = "Thyroid and Parathyroid"
-
-# if key1 in result_dict and key2 in result_dict:
-#     result_dict[new_key] = result_dict[key2]
-#     # Remove the old keys
-#     del result_dict[key1]
-#     del result_dict[key2]
-
 for key in result_dict:
     result_dict[key] = ' '.join(result_dict[key])
 
