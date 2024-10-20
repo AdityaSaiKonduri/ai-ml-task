@@ -5,11 +5,9 @@ This project extracts and categorizes text from an image using Optical Character
 ## Table of Contents
 
 - [Overview](#overview)
+- [Detailed Explanation](#detailed-explanation)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Code Explanation](#code-explanation)
-- [Example Output](#example-output)
 
 ## Overview
 
