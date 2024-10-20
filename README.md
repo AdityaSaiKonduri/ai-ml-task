@@ -57,16 +57,16 @@ Now the next step will be to store the euclidean centres of each of the detected
 - To prevent the coordinates data from being overwritten due to the dictionary propery of having unique keys, I'm using a list to store the coordinates in case of multiple instances of a text item.
 
 ### Step 5:
-- 1. Initialize a dictionary with keys as subheads and values as an empty list.
+1. Initialize a dictionary with keys as subheads and values as an empty list.
 ```
 result_dict = {subhead: [] for subhead in subheads}
 ```
-- 2. Now for each text in the content list, there might me one or more center coordinates.
-- 3. For each of these center coordinates, find the minimum euclidean distance to a subhead.
-- 4. If the value corresponding to the subhead is an empty list, find distance to the subhead.
-- 5. Else, find the distance to the last element of the list which is the corresponding value to a subhead
-- 6. Repeat the points 4 and 5 to find the min distance. It is compulsory that the position of the content item is below its assigned subhead.
-- So, update the minimum distance only if it's lesser than the previous minimum distance and the y-coordinate of the center of the content item is greater-than *(in this case)* the y-coordinate of the subhead.
+2. Now for each text in the content list, there might me one or more center coordinates.
+3. For each of these center coordinates, find the minimum euclidean distance to a subhead.
+4. If the value corresponding to the subhead is an empty list, find distance to the subhead.
+5. Else, find the distance to the last element of the list which is the corresponding value to a subhead
+6. Repeat the points 4 and 5 to find the min distance. It is compulsory that the position of the content item is below its assigned subhead.
+So, update the minimum distance only if it's lesser than the previous minimum distance and the y-coordinate of the center of the content item is greater-than *(in this case)* the y-coordinate of the subhead.
 ```
 if distance < min_distance and content_center[1] > subhead_center[1]:
     min_distance = distance
