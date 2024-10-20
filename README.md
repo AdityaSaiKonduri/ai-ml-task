@@ -1,4 +1,4 @@
-# OCR and Image Text Categorization
+# Solution Explanation
 
 This project extracts and categorizes text from an image using Optical Character Recognition (OCR) and K-Means clustering. The purpose is to identify headings, subheadings, and content within the image based on their dominant colors and organize them in a structured format.
 
