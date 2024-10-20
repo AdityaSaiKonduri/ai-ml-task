@@ -25,6 +25,10 @@ The script processes an image to:
 - Importing Dependencies and defining required functions
 - Using the `cv2` module, reading the image from the path for the *OCR* to process it.
 - `cv2` module reads the image in a *BGR* format.
+```
+def euclidean_dist(x, y):
+    return np.sqrt(np.sum((x - y) ** 2))
+```
 
 ### Step 2:
 - Using the easyOCR module to process the image and obtain the text data in a numpy array form.
