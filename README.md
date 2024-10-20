@@ -61,10 +61,9 @@ result_dict = {subhead: [] for subhead in subheads}
 def euclidean_dist(x, y):
     return np.sqrt(np.sum((x - y) ** 2))
 ```
-4. If the value corresponding to the subhead is an empty list, find distance to the subhead.
-5. Else, find the distance to the last element of the list which is the corresponding value to a subhead
-6. Repeat the points 4 and 5 to find the min distance. It is compulsory that the position of the content item is below its assigned subhead.
-So, update the minimum distance only if it's lesser than the previous minimum distance and the y-coordinate of the center of the content item is greater-than *(in this case)* the y-coordinate of the subhead.
+4. Find the euclidean distance from the content item to each of the subheads.
+5. Repeat the points 4 and 5 to find the min distance. It is compulsory that the position of the content item is below its assigned subhead.
+6. So, update the minimum distance only if it's lesser than the previous minimum distance and the y-coordinate of the center of the content item is greater-than *(in this case)* the y-coordinate of the subhead.
 ```
 if distance < min_distance and content_center[1] > subhead_center[1]:
     min_distance = distance
