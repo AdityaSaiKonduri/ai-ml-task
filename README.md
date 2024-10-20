@@ -23,10 +23,6 @@ The script processes an image to:
 - Importing Dependencies and defining required functions
 - Using the `cv2` module, reading the image from the path for the *OCR* to process it.
 - `cv2` module reads the image in a *BGR* format.
-```
-def euclidean_dist(x, y):
-    return np.sqrt(np.sum((x - y) ** 2))
-```
 
 ### Step 2:
 - Using the easyOCR module to process the image and obtain the text data in a numpy array form.
@@ -61,6 +57,10 @@ result_dict = {subhead: [] for subhead in subheads}
 ```
 2. Now for each text in the content list, there might me one or more center coordinates.
 3. For each of these center coordinates, find the minimum euclidean distance to a subhead.
+```
+def euclidean_dist(x, y):
+    return np.sqrt(np.sum((x - y) ** 2))
+```
 4. If the value corresponding to the subhead is an empty list, find distance to the subhead.
 5. Else, find the distance to the last element of the list which is the corresponding value to a subhead
 6. Repeat the points 4 and 5 to find the min distance. It is compulsory that the position of the content item is below its assigned subhead.

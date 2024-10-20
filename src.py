@@ -67,12 +67,12 @@ for content_text in content:
                 nearest_subhead = subhead_text
         if nearest_subhead:
             result_dict[nearest_subhead].append(content_text)
-            
-
 
 for key in result_dict:
     result_dict[key] = ' '.join(result_dict[key])
 
+
+print(f"\nHeading : {heading}\n")
 for key in result_dict.keys():
     if result_dict[key] == '':
         print(key, end=" ")
