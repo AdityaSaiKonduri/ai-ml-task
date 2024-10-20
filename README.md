@@ -90,6 +90,6 @@ To install the required packages, run:
 ```
 pip install numpy opencv-python easyocr scikit-learn
 ```
-## Google Drive Link : https://drive.google.com/file/d/1vmEqmIS2vLGQM2KL8_OAb5-fpvXym5xs/view?usp=sharing
+## Google Drive Link : <p>https://drive.google.com/file/d/1vmEqmIS2vLGQM2KL8_OAb5-fpvXym5xs/view?usp=sharing</p>
 
 
