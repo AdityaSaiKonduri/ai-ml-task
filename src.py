@@ -6,7 +6,7 @@ from sklearn.cluster import KMeans
 def euclidean_dist(x, y):
     return np.sqrt(np.sum((x - y) ** 2))
 
-image_path = 'C:\\Users\\adity\\OneDrive\\Documents\\RandomWalk\\ai-ml-task\\sample.jpeg'
+image_path = 'ai-ml-task\\sample.jpeg'
 
 image = cv2.imread(image_path)
 reader = easyocr.Reader(['en'])
@@ -67,6 +67,8 @@ for content_text in content:
                 nearest_subhead = subhead_text
         if nearest_subhead:
             result_dict[nearest_subhead].append(content_text)
+            
+
 
 for key in result_dict:
     result_dict[key] = ' '.join(result_dict[key])
