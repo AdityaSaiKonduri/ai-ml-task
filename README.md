@@ -8,6 +8,7 @@ This project extracts and categorizes text from an image using Optical Character
 - [Detailed Explanation](#detailed-explanation)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
+- [Google Drive Link to video](#google-drive-link)
 
 ## Overview
 
@@ -86,6 +87,9 @@ Ensure all dependencies are installed before running the script.
 ## Installation
 
 To install the required packages, run:
-
-```bash
+```
 pip install numpy opencv-python easyocr scikit-learn
+```
+## Google Drive Link : https://drive.google.com/file/d/1vmEqmIS2vLGQM2KL8_OAb5-fpvXym5xs/view?usp=sharing
+
+
